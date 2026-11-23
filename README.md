@@ -69,9 +69,6 @@ Como el `push` desde la terminal fallaba con el error 403, los cambios se subier
 javac Calculadora.java
 java Calculadora
 ```
-
-Abrir http://localhost:8080. `index.html` y `Calculadora.java` deben estar en la misma carpeta.
-
 ## Nota
 
 La potencia usa `Math.pow` (tipo `double`), por lo que con exponentes muy grandes el resultado puede ser `Infinity`.
