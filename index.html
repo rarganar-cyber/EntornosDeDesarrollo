@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <!-- Formulario principal de la calculadora -->
+    <h1>Calculadora</h1>
+
+    <form action="/calcular" method="post">
+
+        <!-- Introducción de los dos números (enteros de hasta 5 dígitos) -->
+        <label for="n1">Primer número:</label>
+        <input type="number" id="n1" name="n1"
+               min="-99999" max="99999" step="1" required>
+
+        <br><br>
+
+        <label for="n2">Segundo número:</label>
+        <input type="number" id="n2" name="n2"
+               min="-99999" max="99999" step="1" required>
+
+        <br><br>
+
+        <!-- Selección de la operación -->
+        <label for="op">Operación:</label>
+        <select id="op" name="op">
+            <option value="sum">Suma</option>
+            <option value="res">Resta</option>
+            <option value="mul">Multiplicación</option>
+            <option value="pot">Potencia</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Calcular</button>
+
+    </form>
+
+    <!-- Aquí aparecerá el resultado -->
+    <!--RESULTADO-->
+
+</body>
+</html>
